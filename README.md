@@ -22,22 +22,22 @@ favicon: /favicon.svg
 theme: default
 layout: CenteredXY
 body:
-	header:
-	main:
-		img: /logo.png app-name .logo
-		h3: App Name
-		p: \#marker tagline 
-		form:
-			action: /auth/login
-			method: post
-			input:
-				select: Role [User, Admin]
-				text: Username
-				password: Password
-			submit: Sign In
-		a: /register Register
-	footer:
-		p: &copy; Company, 2024
+    header:
+    main:
+        img: /logo.png app-name .logo
+        h3: App Name
+        p: \#marker tagline 
+        form:
+            action: /auth/login
+            method: post
+            input:
+                select: Role [User, Admin]
+                text: Username
+                password: Password
+            submit: Sign In
+        a: /register Register
+    footer:
+        p: &copy; Company, 2024
 ```
 
 As you can see, this is readable, maintainable and predictable as a whole. 
@@ -63,9 +63,9 @@ Let's look at how to define elements in a more precise manner; Every element tak
 
 # block element like div, h1..6, p, span, ...
 <element>: <attr>... text
-	# children
-	<element>: <attr>...
-	<element>: <attr>... text
+    # children
+    <element>: <attr>...
+    <element>: <attr>... text
 ```
 
 The `<element>` part refers to the HTML tag. Accessibility, to a possible extent, is taken care off. 
@@ -95,8 +95,8 @@ However, some of the elements which have a specific arrangement(preset) of attri
 
 ```yaml
 img:
-	src: /logo.png
-	alt: app-name
+    src: /logo.png
+    alt: app-name
 ```
 
 ## Theming
@@ -115,16 +115,16 @@ The `form: ...` tag requires the `action` and `method` attributes as well as chi
 
 ```yaml
 form:
-	# action url
-	action: /auth/login
-	# form method
-	method: post
-	# all input fields in order
-	input: select Role [User, Admin]
-	input: text Username
-	input: password Password
-	# form submit input 
-	submit: Sign In
+    # action url
+    action: /auth/login
+    # form method
+    method: post
+    # all input fields in order
+    input: select Role [User, Admin]
+    input: text Username
+    input: password Password
+    # form submit input 
+    submit: Sign In
 ```
 
 >More templates and their presets will be documented as development continues.
