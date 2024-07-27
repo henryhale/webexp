@@ -9,14 +9,14 @@ export function parse(text = "") {
         ln++;
         let trimmedLine = line.trimStart();
         const indent = line.length - trimmedLine.length;
+        trimmedLine = trimmedLine.trimEnd();
+        if (trimmedLine === '' || trimmedLine.startsWith('#')) {
+            continue;
+        }
         for (const k of Object.keys(level).map(x => Number(x))) {
             if (k > indent) {
                 delete level[k];
             }
-        }
-        trimmedLine = trimmedLine.trimEnd();
-        if (trimmedLine === '') {
-            continue;
         }
         const match = trimmedLine.match(/^([\w@$%]+):\s*(.*)$/);
         if (match) {

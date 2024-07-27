@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Commands</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 80vh;
+			font-size: 1.25rem;
+		}
+		body > div > * {
+			margin-top: 1rem;
+		}
+		button,
+		input {
+			font-size: 1.25rem;
+			width: 100px
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>Hello, Commander!</h1>
+		<div>
+			innerText: <span text="count:0"></span>
+		</div>
+		<div>
+			innerHTML: <span html="count"></span>
+		</div>
+		<div>
+			value: <input type="number" val="count">
+		</div>
+		<button command="decrement,log">-</button>
+		<button command="increment,log">+</button>
+	</div>
+	<script type="module" src="./dist/index.js"></script>
+</body>
+
+</html>

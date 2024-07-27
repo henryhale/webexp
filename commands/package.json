@@ -1,0 +1,14 @@
+{
+  "name": "commands",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc -b"
+  },
+  "author": {
+    "name": "Henry Hale",
+    "url": "https://github.com/henryhale"
+  },
+  "license": "MIT"
+}

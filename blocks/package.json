@@ -1,0 +1,16 @@
+{
+  "name": "blocks",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc -b",
+    "test:parser": "node demo/parser.js",
+    "test:render": "node demo/render.js"
+  },
+  "author": {
+    "name": "Henry Hale",
+    "url": "https://github.com/henryhale"
+  },
+  "license": "MIT"
+}

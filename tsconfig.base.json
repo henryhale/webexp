@@ -15,7 +15,5 @@
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "skipLibCheck": true,
-    "outDir": "dist"
-  },
-  "include": ["parser"]
+  }
 }

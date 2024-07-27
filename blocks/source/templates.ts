@@ -1,6 +1,6 @@
 import { TemplateManager } from "./render.js";
 import { parseRenderAttr } from "./render.js";
-import type { Block, TemplateRenderer } from "./types";
+import type { Block, TemplateRenderer } from "./types.js";
 
 const t: Record<string, TemplateRenderer> = {}
 
