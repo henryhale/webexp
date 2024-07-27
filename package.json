@@ -1,0 +1,18 @@
+{
+  "name": "webexp",
+  "version": "1.0.0",
+  "description": "🔍 An experimental approach to web development",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w",
+    "clean": "rm -rf lib/*.js lib/*.d.ts",
+    "test:parser": "node tests/parser.js",
+    "test:render": "node tests/render.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Henry Hale",
+    "url": "https://github.com/henryhale"
+  },
+  "license": "MIT"
+}

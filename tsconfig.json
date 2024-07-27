@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "ES2015", 
+    // "declaration": true,
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
+  },
+  "include": ["parser"]
+}

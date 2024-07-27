@@ -1,0 +1,16 @@
+div: .box
+	h1: #title Hello World
+p: Happy Coding!
+hr:
+img: /logo.png AppName
+img:
+	src: /favicon.svg
+	alt: App Name
+form:
+	action: /auth/login
+	method: post
+	input: text Username
+	input: password Password
+	input: submit Sign In
+	p: No account?
+		a: /signup Register!
