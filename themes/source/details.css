@@ -1,0 +1,39 @@
+/* details and summary */
+details {
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+summary {
+	cursor: pointer;
+	font-weight: 500;
+	padding: 0.5rem;
+	margin: -0.5rem;
+	transition: background-color 0.2s;
+}
+
+summary:hover {
+	background-color: var(--muted);
+}
+
+details[open] summary {
+	margin-bottom: 0.5rem;
+	border-bottom: 1px solid var(--border);
+}
+
+/* Dialog */
+dialog {
+	background-color: var(--primary);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1.5rem;
+	max-width: 32rem;
+	width: 90vw;
+}
+
+dialog::backdrop {
+	background-color: var(--primary-foreground);
+}

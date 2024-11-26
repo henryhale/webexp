@@ -1,0 +1,46 @@
+/* links */
+a {
+	font-weight: 500;
+	color: var(--muted-foreground);
+	text-decoration-color: currentColor;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--primary);
+}
+
+/* buttons */
+button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.25rem;
+	font-weight: 500;
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	transition: all 0.2s;
+	cursor: pointer;
+	border-radius: var(--radius);
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+	border: 1px solid transparent;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+button:focus-visible {
+	outline: 2px solid var(--ring);
+	outline-offset: 2px;
+}
+
+button:disabled {
+	background-color: var(--muted);
+	color: var(--muted-foreground);
+	cursor: not-allowed;
+}

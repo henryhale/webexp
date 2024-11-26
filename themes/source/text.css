@@ -1,0 +1,188 @@
+/* typography */
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primary);
+	font-weight: 700;
+	line-height: 1.2;
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+h2 {
+	font-size: 1.875rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+h5 {
+	font-size: 1.125rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+/* paragraphs and text elements */
+p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+strong,
+b {
+	font-weight: 600;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+small {
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+}
+
+mark {
+	color: var(--primary-foreground);
+	background-color: var(--primary);
+	padding: 0.2em 0.4em;
+	border-radius: 0;
+}
+
+del {
+	color: var(--muted-foreground);
+}
+
+ins {
+	text-decoration: none;
+	border-bottom: 1px dashed var(--primary);
+}
+
+sub,
+sup {
+	font-size: 0.75em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* lists */
+ul,
+ol {
+	padding-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+/* description lists */
+dl {
+	margin-bottom: 1rem;
+}
+
+dt {
+	font-weight: 600;
+	margin-top: 0.5rem;
+}
+
+dd {
+	margin-left: 1.5rem;
+	color: var(--muted-foreground);
+}
+
+/* blockquotes */
+blockquote {
+	border-left: 4px solid var(--border);
+	padding-left: 1rem;
+	margin-left: 0;
+	margin-right: 0;
+	font-style: italic;
+	color: var(--muted-foreground);
+}
+
+/* code elements */
+code,
+kbd,
+samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		monospace;
+	font-size: 0.875em;
+
+	background-color: var(--muted);
+	border-radius: var(--radius);
+	border-color: var(--border);
+}
+
+kbd {
+	padding: 0.2em 0.4em;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+}
+
+pre,
+code,
+samp {
+	display: block;
+	width: 100%;
+	padding: 0.5em 0.75em;
+}
+
+pre {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		monospace;
+	padding: 1rem;
+	background-color: var(--muted);
+	border-radius: var(--radius);
+	overflow-x: auto;
+	font-size: 0.875em;
+}
+
+pre code {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+}
+
+/* hr */
+hr {
+	border: none;
+	border-top: 1px solid var(--border);
+	margin: 2rem 0;
+}
+
+/* address */
+address {
+	font-style: normal;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}

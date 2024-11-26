@@ -1,0 +1,19 @@
+/* media */
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--radius);
+}
+
+figure {
+	margin: 1rem 0;
+}
+
+figcaption {
+	font-size: 0.875rem;
+	color: var(--muted-foreground);
+	text-align: center;
+	margin-top: 0.5rem;
+}
+

@@ -1,0 +1,53 @@
+/* tables */
+table {
+	width: 100%;
+	margin: 1rem 0;
+	line-height: 1.25rem;
+	caption-side: bottom;
+	width: 100%;
+	text-indent: 0;
+	border-color: inherit;
+	border-collapse: collapse;
+}
+
+caption {
+	color: var(--muted-foreground);
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin-top: 1rem;
+}
+
+thead {
+	color: var(--muted);
+}
+
+tfoot {
+	background-color: var(--muted);
+}
+
+th {
+	font-weight: 600;
+	color: var(--muted-foreground);
+	vertical-align: middle;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 3rem;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.75rem;
+}
+
+td {
+	font-weight: 500;
+}
+
+tr:not(tfoot>tr) {
+	border-bottom: 1px solid var(--border);
+}
+
+tr:not(tfoot>tr):hover {
+	background-color: var(--muted);
+}

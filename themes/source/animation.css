@@ -1,0 +1,10 @@
+/* keyframe animation for modal, tooltip */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
